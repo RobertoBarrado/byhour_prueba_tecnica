@@ -25,10 +25,17 @@ public class MoviesRepository {
     }
 
 
-    public List<Movie> getPopularMovies() {
+    public List<Movie> getPopularMovies(int page) {
 
-        List<Movie> moviesList = mMoviePersistence.getPopularMovies();
-        if (moviesList == null || moviesList.isEmpty()) moviesList = mMovies_api.getPopularMovies();
+        List<Movie> moviesList = mMoviePersistence.getPopularMovies(page);
+        if (moviesList == null || moviesList.isEmpty()) moviesList = mMovies_api.getPopularMovies(page);
+        return moviesList;
+    }
+
+    public List<Movie> getSimilarMovies(int id) {
+
+        List<Movie> moviesList = mMoviePersistence.getSimilarMovies(id);
+        if (moviesList == null || moviesList.isEmpty()) moviesList = mMovies_api.getSimilarMovies(id);
         return moviesList;
     }
 

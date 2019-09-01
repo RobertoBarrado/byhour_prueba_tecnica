@@ -7,5 +7,6 @@ import java.util.List;
 public interface Movies_API {
 
     Movie getMovieDetails(int id);
-    List<Movie> getPopularMovies();
+    List<Movie> getPopularMovies(int page);
+    List<Movie> getSimilarMovies(int id);
 }

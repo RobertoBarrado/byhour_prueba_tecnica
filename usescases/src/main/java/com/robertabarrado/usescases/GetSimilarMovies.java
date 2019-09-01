@@ -10,22 +10,22 @@ import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 
 
-public class GetPopularMovies {
+public class GetSimilarMovies {
 
     private MoviesRepository mMoviesRepository;
 
-    public GetPopularMovies(MoviesRepository moviesRepository) {
+    public GetSimilarMovies(MoviesRepository moviesRepository) {
         mMoviesRepository = moviesRepository;
 
     }
 
-    public Observable<Movie> invoke(final int page) {
+    public Observable<Movie> invoke(final int id) {
 
-        return  Observable.create(new ObservableOnSubscribe<Movie>() {
+        return Observable.create(new ObservableOnSubscribe<Movie>() {
             @Override
             public void subscribe(ObservableEmitter<Movie> emitter) throws Exception {
                 try {
-                    List<Movie> newMovies = mMoviesRepository.getPopularMovies(page);
+                    List<Movie> newMovies = mMoviesRepository.getSimilarMovies(id);
 
                     for (Movie m : newMovies)
                         emitter.onNext(m);

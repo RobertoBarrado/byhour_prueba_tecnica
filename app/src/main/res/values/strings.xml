@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">moviesList</string>
+    <string name="app_name">ByHours prueba técnica</string>
+    <string name="title_activity_movie_details">Películas populares</string>
+
+    <string name="release_date">Fecha de lanzamiento: %s</string>
+    <string name="popularity">Visualizaciones: %s</string>
+    <string name="video_count">Nº de visualizaciones: %s</string>
+    <string name="similar_movies">Películas similares:</string>
+    <string name="overview">Resumen:</string>
+
 </resources>

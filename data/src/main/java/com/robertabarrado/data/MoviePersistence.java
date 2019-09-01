@@ -7,5 +7,6 @@ import java.util.List;
 public interface MoviePersistence {
 
     Movie getMovieDetails(int id);
-    List<Movie> getPopularMovies();
+    List<Movie> getPopularMovies(int page);
+    List<Movie> getSimilarMovies(int id);
 }
