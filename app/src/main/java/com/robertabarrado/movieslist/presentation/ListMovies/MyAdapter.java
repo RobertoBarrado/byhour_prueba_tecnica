@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.robertabarrado.domain.Movie;
-import com.robertabarrado.movieslist.R;
+import com.robertobarrado.movieslist.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;

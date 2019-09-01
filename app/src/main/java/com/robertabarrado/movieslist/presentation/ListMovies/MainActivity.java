@@ -14,12 +14,12 @@ import com.robertabarrado.data.MoviePersistence;
 import com.robertabarrado.data.MoviesRepository;
 import com.robertabarrado.data.Movies_API;
 import com.robertabarrado.domain.Movie;
-import com.robertabarrado.movieslist.R;
 import com.robertabarrado.movieslist.framework.ApiRest;
 import com.robertabarrado.movieslist.framework.FakePersistence;
 import com.robertabarrado.movieslist.presentation.MovieDetails.MovieDetails;
 import com.robertabarrado.usescases.GetMovieDetails;
 import com.robertabarrado.usescases.GetPopularMovies;
+import com.robertobarrado.movieslist.R;
 
 import java.util.List;
 

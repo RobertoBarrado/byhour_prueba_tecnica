@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".presentation.MovieDetails.MovieDetails"
+            android:name="com.robertabarrado.movieslist.presentation.MovieDetails.MovieDetails"
             android:label="@string/title_activity_movie_details"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".presentation.ListMovies.MainActivity">
+        <activity android:name="com.robertabarrado.movieslist.presentation.ListMovies.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
